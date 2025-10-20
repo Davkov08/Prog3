@@ -55,6 +55,8 @@ int main(){
 //zadacha 2: imame dve listi, da gi spoime i finalnata lista da e sortirana, bez duplikati
     //a) moze vnesenite listi da se vekje sortirani zasebno
     //b) moze vnesenite listi da ne se sortirani ushte pri vnesot
+//zadacha 3: da napravime bubble sort i insertion sort za listata shto kje ja vneseme
+//note: zad. 2 i 3 moze da se spojat vo edna, ne smee da se pravat kopii od listata, mora site promeni vo sekoj moment da se vrz originalnata niza
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -147,7 +149,7 @@ struct List{
         return false;
     }
 
-    void sortList(){
+    void sortList(){ //bubble sort
         if(!head || !head->next){
             return;
         }
@@ -190,3 +192,6 @@ int main() {
     list1.print();
     return 0;
 }
+
+//zadacha 4: implementacija na dvojna lista: ADD - stava na kraj po default, ako e specificirana dr poz., togash na taa, REMOVE - se trga cel node (so delete), SEARCH - funkcii
+
